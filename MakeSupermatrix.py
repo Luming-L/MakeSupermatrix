@@ -1,5 +1,6 @@
 """
-A script for making supermatrix
+A script to make supermatrix by concatenating multiple sequence alignments of genes.
+
 @author: Luming Lin
 """
 

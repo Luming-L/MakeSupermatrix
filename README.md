@@ -1,4 +1,8 @@
-﻿# Introduction
+﻿# MakeSupermatrix.py
+
+A script to make supermatrix by concatenating multiple sequence alignments of genes.
+
+## Introduction
 In evolutionary biology, "supermatrix" is a data matrix used to reconstruct genome phylogeny, which contains multiple sequence alignments (MSA) of multiple genes. 
 
 A possible workflow for building supermatrix:
@@ -9,19 +13,19 @@ A possible workflow for building supermatrix:
 
 (Barker, D 2020, _Lecture 4: Phylogeny_, lecture notes, Comparative and Evolutionary Genomics PGBI11115, The University of Edinburgh, delivered Feb 2020.)
 
-# Requirements
+## Requirements
  - Python 3
  - Bio
  - sys
 
-# Input
- - several MSA(Multiple sequence alignments) files of orthogroups/genes, check `OG0000296ID_aligned.fa` and `OG0000298ID_aligned.fa` in `MSA/testFiles/Input` as an example.
-- a file stores names of all MSA files, check `MSAfileNames.txt` in `MSA/testFiles/Input` as an example.
+## Input
+ - several MSA (Multiple sequence alignments) files of orthogroups/genes, check `OG0000296ID_aligned.fa` and `OG0000298ID_aligned.fa` in `MSA/TestFiles/Input` as an example.
+- a file stores names of all MSA files, check `MSAfileNames.txt` in `MSA/TestFiles/Input` as an example.
 
-# Output
- - the supermatrix, like `supermatrix.fa` in `MSA/testFiles/Output`.
+## Output
+ - the supermatrix, like `supermatrix.fa` in `MSA/TestFiles/Output`.
 
-# Command
+## Command
 ```
 python3 MakeSupermatrix.py MSAfileNames.txt
 ```
